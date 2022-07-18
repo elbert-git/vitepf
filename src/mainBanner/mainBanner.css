@@ -1,0 +1,22 @@
+.mainBannerRoot{
+  background-color: rgb(238, 238, 238);
+  padding:2em;
+}
+
+.mainBannerRoot .welcome{
+  font-weight: 800;
+  max-width: 10em;
+  font-size: 3em;
+  padding-bottom: 1rem;
+}
+
+.mainBannerRoot .sub{
+  color: grey;
+  max-width: 20em;
+  padding-bottom: 1rem;
+}
+
+.mainBannerRoot .sub span{
+  color: orange;
+  font-weight: 700;
+}

@@ -1,0 +1,46 @@
+.FAQRoot{
+  background-color: rgb(230, 230, 230);
+}
+
+.FAQ{
+  padding:1em;
+}
+
+.FAQTitle{
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.accordion{
+  margin: 1.5em 0em;
+}
+.accordion>div:nth-child(1){
+  cursor: pointer;
+}
+
+.accordion > div:nth-child(1){
+  margin-bottom: 0.5em;
+}
+
+.accordion svg {
+  height: 0.8em;
+  width: fit-content;
+  transform-origin: 50% 50%;
+}
+.accordion > div > div{
+  vertical-align: middle;
+  margin-bottom: 0 !important;
+}
+
+.questionText{
+  /* font-size:0.8em; */
+}
+
+.transition{
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hoverGreen:hover > .questionText, .hoverGreen:hover path{
+  color: #08d43f !important;
+  stroke: #08d43f !important;
+}
