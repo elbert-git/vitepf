@@ -1,3 +1,6 @@
+function getImageUrl(name) {
+  return new URL(`/src/assets/testCardImages/${name}.png`, import.meta.url).href
+}
 
 export default function Card(prop){
   const imageFolder = "src/assets/testCardImages/";
@@ -5,8 +8,8 @@ export default function Card(prop){
   return(
     <div className="card">
       <div className="cardFlipper">
-        <img src={imageFolder + prop.id + "A.png"} className="front" />
-        <img src={imageFolder + prop.id + "B.png"} className="back"  />
+        <img src={getImageUrl(prop.id + "A")} className="front" />
+        <img src={getImageUrl(prop.id + "B")} className="back"  />
       </div>
     </div>
   )
