@@ -1,12 +1,13 @@
 
 export default function Card(prop){
-  const getImg = function(){
-  }
-
+  const imageFolder = "src/assets/testCardImages/";
+   
   return(
     <div className="card">
-      <img src="" className="front"></img>
-      <img src="" className="back"></img>
+      <div className="cardFlipper">
+        <img src={imageFolder + prop.id + "A.png"} className="front" />
+        <img src={imageFolder + prop.id + "B.png"} className="back"  />
+      </div>
     </div>
   )
 }
